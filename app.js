@@ -3,6 +3,7 @@ let bodyParser = require('body-parser');
 let axios = require('axios');
 const _ = require("lodash");
 let app = express();
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine', 'ejs');
@@ -88,4 +89,4 @@ app.get('/:name', (req, res) => {
 })
 
 
-app.listen(3000 || process.env.PORT, () => console.log('app listening on port 3000!'));
+app.listen(port, () => console.log('app listening on port 3000!'));
