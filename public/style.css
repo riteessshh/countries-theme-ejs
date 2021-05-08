@@ -1,0 +1,138 @@
+body {
+  background: #f7f7f7;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.light-theme {
+  background: #f7f7f7;
+  color: #111517;
+}
+
+.light-theme-elements {
+  background: white;
+  color: #111517;
+}
+
+.dark-theme {
+  background: #202c37;
+  color: white;
+}
+
+.dark-theme-elements {
+  background: #2b3945;
+  color: white;
+}
+
+.box {
+  width: 85%;
+  position: relative;
+  left: 7%;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 2rem;
+}
+p span {
+  font-weight: 700;
+}
+
+.heading {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  margin-bottom: 50px;
+  padding: 30px 20px 20px 20px;
+}
+.heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.shadow {
+  box-shadow: 1px 1px 5px 1px #858585;
+}
+
+.back-button {
+  font-size: 3rem;
+  position: relative;
+  left: 7%;
+  width: 215px;
+  border: 0;
+}
+.back-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 50px;
+}
+
+.mode-button {
+  position: relative;
+  display: inline;
+  top: 30%;
+  left: 40%;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .box {
+    width: 90%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+
+  .heading {
+    padding-left: 45px;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .mode-button {
+    top: 45%;
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+    left: 5%;
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  p span {
+    font-weight: 700;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

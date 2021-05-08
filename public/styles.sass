@@ -1,9 +1,29 @@
 body
-  background: hsl(0, 0%, 97%)
   font-family: 'Nunito Sans', sans-serif
 
 img
   width: 100%
+
+.light-theme
+  background: hsl(0, 0%, 97%)
+  color: hsl(200, 15%, 8%)
+
+.light-theme-elements
+  background: hsl(0, 0%, 100%)
+  color: hsl(200, 15%, 8%)
+
+.dark-theme
+  background: hsl(207, 26%, 17%)
+  color: hsl(0, 0%, 100%)
+
+.dark-theme-elements
+  background:  hsl(209, 23%, 22%)
+  color: hsl(0, 0%, 100%)
+
+.list
+  a
+    text-decoration: none
+    color: inherit
 
 .heading
   position: relative
@@ -11,10 +31,12 @@ img
   grid-template-columns: 1fr 300px
   margin-bottom: 50px
   padding: 30px 20px 20px 20px
-  box-shadow: 1px 1px 5px 1px hsl(0, 0%, 52%)
   h1
     font-size: 4rem
     font-weight: bold
+
+.shadow
+  box-shadow: 1px 1px 5px 1px hsl(0, 0%, 52%)
 
 .mode-button
   font-size: 2.5rem
@@ -39,21 +61,17 @@ button#dropdownMenuButton1.btn.btn-light.dropdown-toggle
   position: relative
   left: 5%
   padding-left: 20px
-  box-shadow: 1px 1px 5px 1px hsl(0, 0%, 52%)
 
 a.dropdown-item
   font-size: 3rem
   padding: 1.25rem 7.15rem
 
 .items
-  background: hsl(0, 0%, 100%)
   width: 75%
   margin: 100px auto
-  // box-shadow: 1px 1px 20px 10px grey
   border-radius: 3%
   overflow: hidden
   padding-bottom: 10%
-  // box-shadow: 1px 1px 5px 2px hsl(0, 0%, 52%)
   h1
     font-size: 3.2rem
     padding-left: 10%
@@ -69,7 +87,8 @@ a.dropdown-item
     span
       font-weight: 700
 
-@media (min-width: 1200px)
+
+@media (min-width: 1000px)
 
   img
     height: 200px
@@ -80,9 +99,9 @@ a.dropdown-item
       font-size: 2rem
   .mode-button
     font-size: 1rem
+    top: 20%
 
   .functions
-    // background: hsl(0, 0%, 52%)
     position: relative
     display: grid
     grid-template-columns: 1fr 400px
@@ -96,12 +115,11 @@ a.dropdown-item
       font-size: 1.5rem
       height: 50px
       border: 0
-      box-shadow: 1px 1px 5px 2px hsl(0, 0%, 52%)
 
   button#dropdownMenuButton1.btn.btn-light.dropdown-toggle
-    font-size: 1.5rem
+    font-size: 1.2rem
     position: relative
-    top: 15%
+    top: 20%
     left: 32%
 
   a.dropdown-item
